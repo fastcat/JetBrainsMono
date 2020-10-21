@@ -9,8 +9,8 @@ gitinfo=${gitinfo#v}
 version=${gitinfo%%-*}
 release=${gitinfo#*-}
 
-install -m 644 web/woff2/jetbrains-mono.css ~www-data/html/software/jetbrains-mono-web/
-install -m 644 web/woff2/*.woff2 ~www-data/html/software/jetbrains-mono-web/
+install -m 644 fonts/webfonts/jetbrains-mono.css ~www-data/html/software/jetbrains-mono-web/
+install -m 644 fonts/webfonts/*.woff2 ~www-data/html/software/jetbrains-mono-web/
 
 fakeroot checkinstall \
 	--type=debian \
